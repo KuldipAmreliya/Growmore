@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Miya Beauty Salon</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="landing is-preload">
+	<div id="loading-screen">
+		<video id="loading-video" autoplay muted>
+			<source src="/GrowMore/images/main short video.mp4" type="video/mp4">
+			Your browser does not support the video tag.
+		</video>
+	</div> 
+
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper2">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="about.html">Grow More</a></h1>
+			<nav id="nav">
+				<ul>
+					<li class="special">
+						<a href="#menu" class="menuToggle"><span>Menu</span></a>
+						<div id="menu">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="about.html">Our Story</a></li>
+								
+							</ul>
+							<a href="#menu" class="close"></a>
+						</div>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<h2>Grow more Jewelery Designing Institue</h2>
+							<p>DEFINE YOUR UNIQUENESS<br />
+								BY YOUR OWN Jewelery DESIGNER.<br />
+							</p>
+			</div>
+			<a href="#one" class="more scrolly">Our Story</a>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style1 special">
+			<div class="inner">
+				<header class="major">
+					<h2>Our passion and purpose<br></h2>
+					<p>	At Grow More Jewelry Design Institute, we are dedicated to empowering aspiring jewelry designers
+						with the skills and knowledge to bring their artistic visions to life.
+</p>
+	<p>					Born from a deep appreciation for the artistry of jewelry making, our founders recognized the
+						need for a modern, innovative institute in the heart of Surat. With this vision, we
+						created a space where creativity meets craftsmanship, blending contemporary techniques with
+						timeless design principles.</p>
+					<p>	Trained and experienced in leading global design hubs like Paris, Milan, and New York City, our
+						team brings world-class expertise to every aspect of our curriculum. Grow More Jewelry Design
+						Institute embodies a fusion of global inspiration and local artistry, preparing designers to
+						shine in the competitive world of jewelry design</p>
+				</header>
+				
+		</section>
+
+		<!-- Two -->
+		<section id="two" class="wrapper alt style2">
+			<section class="spotlight">
+				<div class="image"><img src="images/aboutUs.jpg" alt="Welcome lobby"></div>
+				<div class="content">
+					<h2>Institute<br>
+						Hours</h2>
+					<p>Mondays - Saturdays 9am - 7pm</p>
+					<p>Sundays 12pm - 6pm</p>
+					<p><a href="index.html" class="button fit">Book Now</a></p>
+				</div>
+			</section>
+			<section class="spotlight">
+				<div class="image"><img src="images/didi image.png" alt="Our team"></div>
+				<div class="content">
+					<h2>The<br>
+						team</h2>
+					<p>"We are constantly exploring and mastering the latest trends, techniques, and innovations in jewelry design to share with our students and help them craft unique and stunning pieces."</p>
+					<p><a href="index.html" class="button fit">Visit Us</a></p>
+				</div>
+			</section>
+		</section>
+
+		<!-- CTA -->
+		<!-- <section id="cta" class="wrapper style4">
+			<div class="inner">
+				<header>
+					<h2>Book Now</h2>
+				</header>
+				<ul class="actions stacked">
+					<li><a href="#" class="button fit primary">+234-123-456-7890</a></li>
+					<li><a href="index.html" class="button fit">Contact Us</a></li>
+				</ul>
+			</div>
+		</section> -->
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+			</ul>
+			
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+	<script>
+		const video = document.getElementById("loading-video");
+	 const loadingScreen = document.getElementById("loading-screen");
+	 const mainContent = document.getElementById("main-content");
+ 
+	 // Wait for 3 seconds
+	 setTimeout(function() {
+		 // Pause the video
+		 video.pause();
+ 
+		 // Start fade-out animation
+		 loadingScreen.classList.add("fade-out");
+ 
+		 // After the fade-out transition (1 second), hide the loading screen completely
+		 setTimeout(function() {
+			 loadingScreen.style.display = "none"; // Hide loading screen
+			 mainContent.style.display = "block";   // Show main content
+		 }, 500); // Wait for the duration of the fade-out transition
+	 }, 3000); 
+	 </script> 
+
+</body>
+
+</html>
